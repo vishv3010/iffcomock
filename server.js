@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, '/')));
 // --- API ROUTES ---
 
 // 1. Create Order
-app.post('/api/create-order', async (req, res) => {
+app.post('/.netlify/functions/create-order', async (req, res) => {
     try {
         const { amount = 5000, currency = 'INR', receipt = 'receipt#1' } = req.body;
 
@@ -48,7 +48,7 @@ app.post('/api/create-order', async (req, res) => {
 });
 
 // 2. Verify Payment
-app.post('/api/verify-payment', async (req, res) => {
+app.post('/.netlify/functions/verify-payment', async (req, res) => {
     try {
         const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
 
