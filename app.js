@@ -110,7 +110,7 @@ async function initiateRazorpayPayment() {
         }
 
         // 1. Create Order via serverless function
-        const orderResponse = await fetch('/api/create-order', {
+        const orderResponse = await fetch('/.netlify/functions/create-order', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ amount: 5000, currency: 'INR' })
@@ -132,7 +132,7 @@ async function initiateRazorpayPayment() {
             "handler": async function (response){
                 // 3. Verify Payment Signature via serverless function
                 try {
-                    const verifyResponse = await fetch('/api/verify-payment', {
+                    const verifyResponse = await fetch('/.netlify/functions/verify-payment', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
