@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFFCO GET Mock Test – Computer Science | Practice Tests 2026</title>
+    <meta name="description" content="Free IFFCO Graduate Engineer Trainee (Computer Science) mock tests. 4 full-length practice sets with 100 MCQs each. Timer, negative marking, scoring &amp; detailed results.">
+    <meta name="keywords" content="IFFCO, GET, Graduate Engineer Trainee, Computer Science, Mock Test, Practice, MCQ, 2026">
+    <meta name="author" content="IFFCO GET Prep">
+    <meta name="theme-color" content="#0f1117">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IFFCO GET Mock Test – Computer Science 2026">
+    <meta property="og:description" content="Practice with 4 full-length mock tests (100 MCQs each) for the IFFCO Graduate Engineer Trainee Computer Science preliminary exam. Free, timed, with instant results.">
+    <meta property="og:image" content="og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IFFCO GET Mock Test – Computer Science 2026">
+    <meta name="twitter:description" content="4 free mock tests with 100 MCQs each. Timer, negative marking, section-wise results.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <!-- ==================== HOME SCREEN ==================== -->
+    <div id="home-screen" class="screen active">
+        <header class="home-header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#g1)"/><path d="M12 20h16M20 12v16" stroke="#fff" stroke-width="3" stroke-linecap="round"/><defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+                </div>
+                <span class="logo-text">IFFCO GET Prep</span>
+            </div>
+        </header>
+
+        <main class="home-main">
+            <div class="hero">
+                <div class="hero-badge">🎯 Computer Science – GET 2026</div>
+                <h1>IFFCO Mock Test Series</h1>
+                <p class="hero-sub">Practice with <strong>5 full-length mock tests</strong> designed for the <strong>Graduate Engineer Trainee (Computer Science)</strong> preliminary exam. Includes a full 150-question comprehensive mock.</p>
+                <button class="btn-secondary" style="margin-top: 15px; font-weight: 600;" onclick="showStudyGuide()"><span style="margin-right:8px;">📖</span> Study Guide & Quick Notes</button>
+            </div>
+
+            <div class="exam-info-cards">
+                <div class="info-card">
+                    <div class="info-icon">📝</div>
+                    <div class="info-label">Questions</div>
+                    <div class="info-value">100 per set</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⏱️</div>
+                    <div class="info-label">Duration</div>
+                    <div class="info-value">45 Minutes</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">✅</div>
+                    <div class="info-label">Correct</div>
+                    <div class="info-value">+1 Mark</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">❌</div>
+                    <div class="info-label">Wrong</div>
+                    <div class="info-value">−0.25 Mark</div>
+                </div>
+            </div>
+
+            <div class="syllabus-section">
+                <h2>Syllabus Coverage</h2>
+                <div class="syllabus-grid">
+                    <div class="syllabus-group">
+                        <h3>🖥️ Technical (65 Qs)</h3>
+                        <ul>
+                            <li>Data Structures &amp; Algorithms</li>
+                            <li>Database Management Systems</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Networks</li>
+                            <li>OOP &amp; Programming</li>
+                            <li>Computer Architecture</li>
+                            <li>Software Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="syllabus-group">
+                        <h3>🧠 General Aptitude (35 Qs)</h3>
+                        <ul>
+                            <li>Quantitative Aptitude</li>
+                            <li>Logical Reasoning</li>
+                            <li>General Awareness / GK</li>
+                            <li>English &amp; Communication</li>
+                            <li>Current Affairs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Choose a Mock Test</h2>
+
+            <!-- Unlock CTA (shown when locked) -->
+            <div id="unlock-cta" class="unlock-cta">
+                <div class="unlock-cta-inner">
+                    <span class="unlock-icon">🔒</span>
+                    <div>
+                        <h3>Unlock All 5 Mock Tests</h3>
+                        <p>Get instant access to 550 practice MCQs for just <strong>₹50</strong></p>
+                    </div>
+                    <button class="btn-start btn-unlock" onclick="openPaymentModal()">🔓 Unlock Now – ₹50</button>
+                </div>
+            </div>
+
+            <div class="test-cards">
+                <div class="test-card" onclick="handleTestClick(0)">
+                    <div class="test-card-lock" id="lock-0">🔒</div>
+                    <div class="test-card-badge">SET 1</div>
+                    <h3>Mock Test 1</h3>
+                    <p>Focus: DSA, DBMS, OS, Networks, Aptitude</p>
+                    <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
+                    <button class="btn-start">Start Test →</button>
+                </div>
+                <div class="test-card" onclick="handleTestClick(1)">
+                    <div class="test-card-lock" id="lock-1">🔒</div>
+                    <div class="test-card-badge set2">SET 2</div>
+                    <h3>Mock Test 2</h3>
+                    <p>Focus: Algorithms, SE, Architecture, Reasoning</p>
+                    <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
+                    <button class="btn-start">Start Test →</button>
+                </div>
+                <div class="test-card" onclick="handleTestClick(2)">
+                    <div class="test-card-lock" id="lock-2">🔒</div>
+                    <div class="test-card-badge set3">SET 3</div>
+                    <h3>Mock Test 3</h3>
+                    <p>Focus: Mixed CS, GK, Current Affairs, English</p>
+                    <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
+                    <button class="btn-start">Start Test →</button>
+                </div>
+                <div class="test-card" onclick="handleTestClick(3)">
+                    <div class="test-card-lock" id="lock-3">🔒</div>
+                    <div class="test-card-badge set4">SET 4 · EASY</div>
+                    <h3>Mock Test 4 (Easy)</h3>
+                    <p>Focus: Basics &amp; Fundamentals – Perfect for Warm-up</p>
+                    <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
+                    <button class="btn-start">Start Test →</button>
+                </div>
+                <div class="test-card" onclick="handleTestClick(4)">
+                    <div class="test-card-lock" id="lock-4">🔒</div>
+                    <div class="test-card-badge" style="background:var(--primary-dark)">SET 5 · FULL LENGTH</div>
+                    <h3>Mock Test 5 (Ultimate)</h3>
+                    <p>Focus: Exam Accurate Pattern – Technical + Aptitude</p>
+                    <div class="test-card-meta">150 Questions · 75 min · 150 Marks</div>
+                    <button class="btn-start">Start Test →</button>
+                </div>
+            </div>
+
+            <div class="instructions-box">
+                <h3>📋 Instructions</h3>
+                <ol>
+                    <li>Each test has <strong>100 multiple choice questions</strong>.</li>
+                    <li>You have <strong>45 minutes</strong> to complete each test.</li>
+                    <li><strong>+1 mark</strong> for each correct answer. <strong>−0.25 marks</strong> for each wrong answer.</li>
+                    <li>Unanswered questions carry <strong>no penalty</strong>.</li>
+                    <li>You can navigate between questions using the question palette.</li>
+                    <li>You can <strong>mark questions for review</strong> and revisit them later.</li>
+                    <li>The test will <strong>auto-submit</strong> when time runs out.</li>
+                    <li>Your results and detailed analysis will be shown after submission.</li>
+                </ol>
+            </div>
+
+            <div id="past-results-section" class="past-results-section">
+                <div class="section-title-flex">
+                    <h2 class="section-title" style="margin-bottom:0;">Past Results</h2>
+                    <button class="btn-clear-history" onclick="clearHistory()">Clear History</button>
+                </div>
+                <div id="past-results">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="home-footer">
+            <p>Built for IFFCO GET 2026 preparation · Not affiliated with IFFCO</p>
+            <p class="disclaimer">Disclaimer: Questions are for practice only and are not official IFFCO examination questions. This is an independent preparation tool.</p>
+            <p class="footer-links"><a href="terms.html" target="_blank">Terms of Service</a> · <a href="terms.html#6" target="_blank">Refund Policy</a> · <a href="terms.html#10" target="_blank">Contact</a></p>
+        </footer>
+    </div>
+
+    <!-- ==================== TEST SCREEN ==================== -->
+    <div id="test-screen" class="screen">
+        <div class="test-topbar">
+            <div class="test-topbar-left">
+                <button class="btn-back-home" onclick="confirmGoHome()" title="Back to Home">← Home</button>
+                <div class="topbar-divider"></div>
+                <span id="test-title">Mock Test 1</span>
+            </div>
+            <div class="test-topbar-right">
+                <div class="jump-to-box">
+                    <label for="jump-input">Go to Q:</label>
+                    <input type="number" id="jump-input" min="1" max="100" placeholder="#" onkeydown="if(event.key==='Enter')jumpToQuestion()">
+                    <button class="btn-jump" onclick="jumpToQuestion()">Go</button>
+                </div>
+                <div class="timer-box" id="timer-box">
+                    <svg class="timer-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14.5A6.5 6.5 0 1116.5 10 6.51 6.51 0 0110 16.5zM10.75 6a.75.75 0 00-1.5 0v4.5a.75.75 0 00.37.65l3 1.75a.75.75 0 10.76-1.3L10.75 10V6z"/></svg>
+                    <span id="timer-display">45:00</span>
+                </div>
+            </div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="progress-bar-wrap">
+            <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+        </div>
+
+        <div class="test-body">
+            <div class="question-area">
+                <div class="question-header">
+                    <span class="q-number" id="q-number">Question 1 of 100</span>
+                    <span class="q-section" id="q-section">Technical – Data Structures</span>
+                </div>
+                <div class="question-text" id="question-text"></div>
+                <div class="options-list" id="options-list"></div>
+                <div class="question-actions">
+                    <button class="btn-secondary" id="btn-clear" onclick="clearResponse()">✕ Clear Response</button>
+                    <button class="btn-secondary" id="btn-review" onclick="toggleReview()">📌 Mark for Review</button>
+                    <button class="btn-secondary btn-save-next" id="btn-save-next" onclick="saveAndNext()">💾 Save & Next</button>
+                </div>
+                <div class="question-nav">
+                    <button class="btn-nav" id="btn-first" onclick="goToQuestion(0)">⏮ First</button>
+                    <button class="btn-nav" id="btn-prev" onclick="prevQuestion()">← Previous</button>
+                    <button class="btn-nav btn-nav-primary" id="btn-next" onclick="nextQuestion()">Next →</button>
+                    <button class="btn-nav" id="btn-last" onclick="goToQuestion(questions.length-1)">Last ⏭</button>
+                </div>
+            </div>
+
+            <div class="palette-area">
+                <div class="palette-header">
+                    <h3>Question Palette</h3>
+                    <button class="btn-toggle-palette" id="btn-toggle-palette" onclick="togglePalette()">☰</button>
+                </div>
+                <div class="palette-legend">
+                    <span class="legend-item"><span class="legend-dot not-visited"></span> Not Visited</span>
+                    <span class="legend-item"><span class="legend-dot answered"></span> Answered</span>
+                    <span class="legend-item"><span class="legend-dot not-answered"></span> Not Answered</span>
+                    <span class="legend-item"><span class="legend-dot review"></span> Marked for Review</span>
+                </div>
+                <div class="palette-grid" id="palette-grid"></div>
+                <div class="palette-summary" id="palette-summary"></div>
+                <button class="btn-submit" onclick="confirmSubmit()">Submit Test</button>
+            </div>
+        </div>
+
+        <!-- Mobile Palette Toggle -->
+        <div class="mobile-palette-overlay" id="mobile-palette-overlay" onclick="togglePalette()"></div>
+    </div>
+
+    <!-- ==================== RESULT SCREEN ==================== -->
+    <div id="result-screen" class="screen">
+        <div class="result-container">
+            <div class="result-header">
+                <h1>📊 Test Results</h1>
+                <p id="result-test-name">Mock Test 1</p>
+            </div>
+
+            <div class="score-circle-wrap">
+                <div class="score-circle" id="score-circle">
+                    <span class="score-value" id="score-value">0</span>
+                    <span class="score-label">out of 100</span>
+                </div>
+            </div>
+
+            <!-- Cutoff Analysis -->
+            <div id="cutoff-analysis" class="cutoff-analysis">
+                <h4 id="cutoff-title">Analysis</h4>
+                <p id="cutoff-text">Analyzing your performance...</p>
+                <div class="cutoff-bar-container">
+                    <div id="cutoff-bar-fill" class="cutoff-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="result-stats">
+                <div class="stat-card correct">
+                    <div class="stat-num" id="stat-correct">0</div>
+                    <div class="stat-label">Correct</div>
+                </div>
+                <div class="stat-card wrong">
+                    <div class="stat-num" id="stat-wrong">0</div>
+                    <div class="stat-label">Wrong</div>
+                </div>
+                <div class="stat-card skipped">
+                    <div class="stat-num" id="stat-skipped">0</div>
+                    <div class="stat-label">Unanswered</div>
+                </div>
+                <div class="stat-card penalty">
+                    <div class="stat-num" id="stat-penalty">0</div>
+                    <div class="stat-label">Neg. Marks</div>
+                </div>
+                <div class="stat-card time">
+                    <div class="stat-num" id="time-spent">0m 0s</div>
+                    <div class="stat-label">Time Spent</div>
+                </div>
+            </div>
+
+            <div class="result-breakdown">
+                <h2>Section-wise Performance</h2>
+                <div id="section-breakdown"></div>
+            </div>
+
+            <div class="result-review">
+                <h2>📖 Detailed Answer Review</h2>
+                <div class="review-filters">
+                    <button class="filter-btn active" onclick="filterReview('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterReview('correct', this)">✅ Correct</button>
+                    <button class="filter-btn" onclick="filterReview('wrong', this)">❌ Wrong</button>
+                    <button class="filter-btn" onclick="filterReview('skipped', this)">⏭️ Skipped</button>
+                </div>
+                <div id="review-list"></div>
+            </div>
+
+            <div class="result-actions">
+                <button class="btn-start" onclick="goHome()">← Back to Home</button>
+                <button class="btn-secondary" onclick="retakeTest()">🔄 Retake</button>
+                <button class="btn-secondary" onclick="printResults()">🖨️ Print Results</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONFIRM MODAL ==================== -->
+    <!-- Submit Confirm Modal -->
+    <div class="modal-overlay" id="confirm-modal">
+        <div class="modal-box">
+            <h3>⚠️ Submit Test?</h3>
+            <p id="modal-summary">You have answered 0 out of 100 questions.</p>
+            <p class="modal-warn">Once submitted, you cannot change your answers.</p>
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn-start" onclick="submitTest()">Submit Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Go Home Confirm Modal -->
+    <div class="modal-overlay" id="home-modal">
+        <div class="modal-box">
+            <h3>🏠 Leave Test?</h3>
+            <p>Are you sure you want to go back to the home screen?</p>
+            <p class="modal-warn">Your progress on this test will be lost.</p>
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="closeHomeModal()">Continue Test</button>
+                <button class="btn-start" onclick="confirmLeave()">Yes, Leave</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STUDY GUIDE SCREEN ==================== -->
+    <div id="study-screen" class="screen">
+        <header class="header">
+            <div class="header-title">📖 Study Guide & Tips</div>
+            <button class="btn-danger" onclick="hideStudyGuide()">Back to Home</button>
+        </header>
+        
+        <div class="study-layout">
+            <div class="study-sidebar">
+                <button class="study-nav-btn active" onclick="loadStudyTopic('iffco', this)">🏢 About IFFCO & Exam</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('dsa', this)">Data Structures (DSA)</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('dbms', this)">DBMS</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('os', this)">Operating Systems</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('networks', this)">Computer Networks</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('software_eng', this)">Software Eng & OOP</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('aptitude', this)">Aptitude & Tips</button>
+                <button class="study-nav-btn" onclick="loadStudyTopic('gk', this)">General Knowledge</button>
+            </div>
+            <div class="study-content" id="study-content-area">
+                <!-- Dynamic content loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAYMENT MODAL ==================== -->
+    <div class="modal-overlay" id="payment-modal">
+        <div class="modal-box payment-modal-box">
+            <button class="modal-close-btn" onclick="closePaymentModal()">✕</button>
+            <h3>🔓 Unlock All Mock Tests</h3>
+            <p class="payment-price"><span class="price-tag">₹50</span> one-time payment · Instant access</p>
+
+            <!-- Step 1: Pay -->
+            <div id="pay-step-1" class="pay-step">
+                <div class="pay-step-header">Pay & Unlock</div>
+                <p class="pay-note">Enter your details to proceed with the payment securely via Razorpay.</p>
+                
+                <div class="pay-input-group">
+                    <label for="pay-name">Your Name</label>
+                    <input type="text" id="pay-name" placeholder="e.g. Rahul Kumar" maxlength="60" autocomplete="off">
+                </div>
+                <div class="pay-input-group">
+                    <label for="pay-email">Email Address</label>
+                    <input type="email" id="pay-email" placeholder="e.g. rahul@example.com" autocomplete="off">
+                </div>
+                <div class="pay-input-group">
+                    <label for="pay-phone">Phone Number</label>
+                    <input type="text" id="pay-phone" placeholder="e.g. 9876543210" maxlength="15" autocomplete="off">
+                </div>
+
+                <div class="terms-accept">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms-check">
+                        <span>I have read and agree to the <a href="terms.html" target="_blank">Terms of Service, Disclaimer &amp; Refund Policy</a>. I understand these are <strong>practice questions only</strong> and may not appear in any actual examination. <strong>No refunds.</strong></span>
+                    </label>
+                </div>
+
+                <p id="pay-error" class="pay-error"></p>
+                <button class="btn-start" style="width:100%;margin-top:12px;" onclick="initiateRazorpayPayment()">💳 Pay ₹50 & Unlock</button>
+            </div>
+
+            <!-- Step 3: Success -->
+            <div id="pay-step-3" class="pay-step" style="display:none;">
+                <div class="pay-step-header">✅ Access Granted!</div>
+                <p class="pay-note" style="text-align:center;font-size:1.1rem;margin:20px 0;">🎉 All 5 mock tests are now unlocked on this device!</p>
+                <p class="pay-note" style="text-align:center;">Your access is tied to <strong>this browser</strong>. You can start any test right away.</p>
+                <button class="btn-start" style="width:100%;margin-top:16px;" onclick="closePaymentModal()">✅ Start Taking Tests</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="questions.js?v=2"></script>
+    <script src="questions5.js?v=2"></script>
+    <script src="study.js?v=1"></script>
+    <script src="app.js?v=2"></script>
+</body>
+</html>
