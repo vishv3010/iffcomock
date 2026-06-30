@@ -116,7 +116,7 @@
             </div>
 
             <div class="test-cards">
-                <div class="test-card" onclick="handleTestClick(0)">
+                <div class="test-card" style="border-left-color:#6366f1;" onclick="handleTestClick(0)">
                     <div class="test-card-lock" id="lock-0">🔒</div>
                     <div class="test-card-badge">SET 1</div>
                     <h3>Mock Test 1</h3>
@@ -124,7 +124,7 @@
                     <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
                     <button class="btn-start">Start Test →</button>
                 </div>
-                <div class="test-card" onclick="handleTestClick(1)">
+                <div class="test-card" style="border-left-color:#06b6d4;" onclick="handleTestClick(1)">
                     <div class="test-card-lock" id="lock-1">🔒</div>
                     <div class="test-card-badge set2">SET 2</div>
                     <h3>Mock Test 2</h3>
@@ -132,7 +132,7 @@
                     <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
                     <button class="btn-start">Start Test →</button>
                 </div>
-                <div class="test-card" onclick="handleTestClick(2)">
+                <div class="test-card" style="border-left-color:#f59e0b;" onclick="handleTestClick(2)">
                     <div class="test-card-lock" id="lock-2">🔒</div>
                     <div class="test-card-badge set3">SET 3</div>
                     <h3>Mock Test 3</h3>
@@ -140,7 +140,7 @@
                     <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
                     <button class="btn-start">Start Test →</button>
                 </div>
-                <div class="test-card" onclick="handleTestClick(3)">
+                <div class="test-card" style="border-left-color:#22c55e;" onclick="handleTestClick(3)">
                     <div class="test-card-lock" id="lock-3">🔒</div>
                     <div class="test-card-badge set4">SET 4 · EASY</div>
                     <h3>Mock Test 4 (Easy)</h3>
@@ -148,7 +148,7 @@
                     <div class="test-card-meta">100 Questions · 45 min · 100 Marks</div>
                     <button class="btn-start">Start Test →</button>
                 </div>
-                <div class="test-card" onclick="handleTestClick(4)">
+                <div class="test-card" style="border-left-color:#8b5cf6;" onclick="handleTestClick(4)">
                     <div class="test-card-lock" id="lock-4">🔒</div>
                     <div class="test-card-badge" style="background:var(--primary-dark)">SET 5 · FULL LENGTH</div>
                     <h3>Mock Test 5 (Ultimate)</h3>
@@ -386,6 +386,22 @@
             <h3>🔓 Unlock All Mock Tests</h3>
             <p class="payment-price"><span class="price-tag">₹50</span> one-time payment · Instant access</p>
 
+            <!-- What you get -->
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+                <div style="flex:1;min-width:120px;background:var(--bg-input);border-radius:10px;padding:12px;text-align:center;">
+                    <div style="font-size:1.4rem;margin-bottom:4px;">📝</div>
+                    <div style="font-size:0.78rem;color:var(--text-dim);font-weight:600;">5 Mock Tests</div>
+                </div>
+                <div style="flex:1;min-width:120px;background:var(--bg-input);border-radius:10px;padding:12px;text-align:center;">
+                    <div style="font-size:1.4rem;margin-bottom:4px;">💡</div>
+                    <div style="font-size:0.78rem;color:var(--text-dim);font-weight:600;">550+ MCQs</div>
+                </div>
+                <div style="flex:1;min-width:120px;background:var(--bg-input);border-radius:10px;padding:12px;text-align:center;">
+                    <div style="font-size:1.4rem;margin-bottom:4px;">⚡</div>
+                    <div style="font-size:0.78rem;color:var(--text-dim);font-weight:600;">Instant Access</div>
+                </div>
+            </div>
+
             <!-- Step 1: Pay -->
             <div id="pay-step-1" class="pay-step">
                 <div class="pay-step-header">Pay & Unlock</div>
@@ -413,6 +429,11 @@
 
                 <p id="pay-error" class="pay-error"></p>
                 <button class="btn-start" style="width:100%;margin-top:12px;" onclick="initiateRazorpayPayment()">💳 Pay ₹50 & Unlock</button>
+                
+                <!-- Security badge -->
+                <div style="text-align:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--border);">
+                    <span style="font-size:0.75rem;color:var(--text-dimmer);display:inline-flex;align-items:center;gap:6px;">🔒 Secured by Razorpay · 256-bit SSL Encryption</span>
+                </div>
             </div>
 
             <!-- Step 3: Success -->
