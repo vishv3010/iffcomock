@@ -123,7 +123,7 @@ async function initiateRazorpayPayment() {
 
         // 2. Initialize Razorpay Checkout
         var options = {
-            "key": "rzp_test_T7i1Whwi5LTtOi", // Test Key ID provided by user
+            "key": "rzp_live_T7jjCErW4IDlBP", // Live Key ID
             "amount": orderData.amount,
             "currency": orderData.currency,
             "order_id": orderData.order_id,
